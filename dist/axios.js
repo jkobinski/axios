@@ -751,6 +751,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @returns {Promise} The Promise to be fulfilled
 	 */
 	module.exports = function dispatchRequest(config) {
+	  consol.log('dispatchRequest()');
+	  console.log(config);
 	  throwIfCancellationRequested(config);
 	
 	  // Ensure headers exist
